@@ -10,6 +10,81 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/*
+header style
+*/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav {
+      background-color: #cdcdcd;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+      display: flex;
+    }
+
+    nav li:nth-child(1) a {
+      background-color: #FF5733; 
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    nav li:nth-child(2) a {
+      background-color: #3498db; 
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    nav li:nth-child(3) a {
+      background-color: #27ae60; 
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
 
 html {
   color: #222;
