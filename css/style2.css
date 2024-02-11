@@ -8,12 +8,12 @@
     --darkBlue: #166ba2;
     --padding-d: 0 20vw;
     --gap-d: 2em;
-    --green: rgb(37,195,137);
-    --yellow: rgb(254,185,2);
-    --red: #e7615e;
-    --lightBlue: #1fa8d4;
-    --darkBlue: #166ba2;
-    --footer: rgb(22,36,47);
+    --box-green: rgb(37,195,137);
+    --box-yellow: rgb(254,185,2);
+    --box-red: #e7615e;
+    --box-lightBlue: #1fa8d4;
+    --box-darkBlue: #166ba2;
+    --box-footer: rgb(22,36,47);
   }
   
   
@@ -246,7 +246,7 @@
     font-weight: normal;
   }
   .footer{
-    background-color:var(--footer);
+    background-color:var(--box-footer);
     width: 100%;
     height: auto;
     position: absolute;
@@ -302,25 +302,25 @@
     flex-direction: row;
     margin: auto;
     margin: 10;
-    border:2px solid var(---logo-yellow);
+    border:2px solid var(--box-yellow);
   }
     .skills-image-container-2{
     flex-direction: row;
     margin: auto;
     padding: 10;
-    border:2px solid var(--logo-green);
+    border:2px solid var(--box-green);
   }
     .skills-image-container-3{
     flex-direction: row;
     margin: auto;
     padding: 10;
-    border:2px solid var(--logo-red);
+    border:2px solid var(--box-red);
   }
     .skills-image-container-4{
     flex-direction: row;
     margin: auto;
     padding: 10;
-    border:2px solid var(--logo-lightBlue);
+    border:2px solid var(--box-lightBlue);
   }
   
   .page_slide_column{
