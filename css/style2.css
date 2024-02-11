@@ -16,6 +16,7 @@
     --box-footer: rgb(22,36,47);
     --dark-grey: #374550;
     --bar-blue: #168db7;
+    --text-grey: #939393;
   font-family: Ubuntu;
   }
   
@@ -31,6 +32,9 @@
 
     font-family: Ubuntu-Italic;
     src: url(/fonts/Ubuntu/Ubuntu-Italic.ttf);
+
+    font-family: Ubuntu-Bold;
+    src: url(/fonts/Ubuntu/Ubuntu-Bold.ttf);
   }
   
   .row {
@@ -55,6 +59,44 @@
     padding: 1em;
     margin: 0;
   }
+
+  .facebook, .google,.twitter,.instagram,.rss{
+    height:20px;
+    top: 20%;
+    left:20%;
+    position: relative;
+  }
+
+
+  .icon-facebook{
+    background-color: #1f52e9;
+    height:50px;
+    width: 50px;
+    margin-right:5px;
+  }
+  .icon-google{
+    background-color: #ff4800;
+    width: 50px;
+    height:50px;
+    margin-right:5px;
+  }
+  .icon-twitter{
+    width: 50px;
+    height: 50px;
+    background-color: #00c8ff;
+    margin-right:5px;
+  }
+  .icon-instagram{
+    background-color: #ff29cd;
+    width: 50px;
+    height: 50px;
+  }
+  .icon-rss{
+    background-color: #fdc730;
+    width: 50px;
+    height: 50px;
+    margin-left:5px;
+  }
   
   .navBarIcons {
     display: flex;
@@ -69,13 +111,7 @@
     height: 20em;
     object-fit: cover;
   }
-  
-  .navTab {
-    height: 5em;
-    width: 8em;
-  
-  }
-  
+
   .homeTab {
     background-color: var(--green);
   }
@@ -193,21 +229,7 @@
     list-style:none;
   }
   
-  .facebook {
-    background-color: #1f52e9;
-  }
-  .google {
-    background-color: #ff4800;
-  }
-  .twitter {
-    background-color: #00c8ff;
-  }
-  .instagram {
-    background-color: #ff29cd;
-  }
-  .rss {
-    background-color: #fdc730;
-  }
+
   /** about section ends **/
   
   .flicker-imgs {
@@ -251,15 +273,20 @@
     flex-direction: column;
     vertical-align: auto;
     width: 10em;
+    position:relative;
+    bottom:5em;
   }
   .portrait{
-    width:150px;
-    height: 150px;
-    padding:30px;
+    width:125px;
+    height: 125px;
+    padding:70px;
+    position: relative;
+    bottom: 2em;
   }
   .skills-body-medium{
-    font-size: 10px;
-    font-family: Ubuntu-Light;
+    font-family: Ubuntu;
+    color:var(--text-grey);
+    font-size: 12px;
   }
   .footer{
     background-color:var(--box-footer);
@@ -298,6 +325,8 @@
   .footer-title{
     color:white;
     text-align: center;
+    font-size: 1em;
+    margin: auto;
   }
   
   
@@ -307,14 +336,35 @@
     flex-direction: column;
     justify-content: center;
     width:10em;
+    padding:3em;
+    bottom:6em;
   }
   .footer-text-small{
     color:white;
     font-size: .75em;
-    font-family: Ubuntu-Italic;
+    font-family: "Ubuntu-Italic";
     width:15em;
   }
-  
+
+  .heading{
+    font-family: "Ubuntu";
+    font-weight:400;
+     font-size: 29px;
+  }
+  .about-heading{
+    font-family: "Ubuntu";
+    font-weight:400;
+    font-size: 29px;
+    margin:auto;
+    padding:.1em;
+  }
+
+  .about-text{
+    margin:0;
+    font-style: "Ubuntu-Light";
+    font-size: 10px;
+    color: var(--text-grey)
+  }
   .header-large{
     font-size: 1.5em;
     padding: 0;
@@ -322,31 +372,31 @@
   }
   .skills-image{
     margin:.5em;
-    color:red;
+    width: 50px;
   }
   
   .skills-image-container-1{
-    flex-direction: row;
     margin: auto;
-    margin: 10;
+    bottom: 5px;
+    position:relative;
     border:2px solid var(--box-yellow);
   }
     .skills-image-container-2{
-    flex-direction: row;
+    position:relative;
     margin: auto;
-    padding: 10;
+    bottom: 5px;
     border:2px solid var(--box-green);
   }
     .skills-image-container-3{
-    flex-direction: row;
+    position: relative;
     margin: auto;
-    padding: 10;
+    bottom: 5px;
     border:2px solid var(--box-red);
   }
     .skills-image-container-4{
-    flex-direction: row;
+    position:relative;
     margin: auto;
-    padding: 10;
+    bottom: 5px;
     border:2px solid var(--box-lightBlue);
   }
   
@@ -380,6 +430,7 @@
   .skills-card{
     display: flex;
   flex-direction: column;
+  margin:.25em
   }
   
   .skills-container {
@@ -438,30 +489,51 @@
   .icon-container-footer{
     display: flex;
     flex-direction: row;
-    height: 75%;
-    width: 100%;
+    position: relative;
+    bottom:100%;
+    left:90%;
   }
 
   .icon-container, .logo-container, .icon-container-footer{
     display: flex;
     flex-direction: row;
   }
-  .triangle-down {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 50px solid #555;
-  }
 
 .border-style-blue{
   border-bottom:1px solid var(--bar-blue);
+  position: relative;
+  bottom:10em;
+  left:5em;
 }
 .border-bar-blue{
-  border-bottom: 1px solid var(--dark-grey);
+  border-bottom: .75px solid var(--dark-grey);
   color: white;
+  position: relative;
+  top: 1px;
   width:100vw;
 }
+
+.skills-title-large{
+  padding: 0;
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  margin:auto;
+}
+
+.navBarIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  }
+  
+  .navTab {
+  height: 100%;
+  width: 100%;
+  
+  }
+
   @media screen and (max-width: 29.9375em) {
   .logo {
     width:15em;
@@ -523,19 +595,7 @@
   }
   }
   
-  .navBarIcons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  }
-  
-  .navTab {
-  height: 100%;
-  width: 100%;
-  
-  }
+
   
   
   /* 2.3 medium and up */
